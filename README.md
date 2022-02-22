@@ -18,7 +18,12 @@ print the word count
 ### Step 6: 
 call the function.
 ## PROGRAM:
-def wordcount(filen): count = 0 with open(filen,"r") as f1: data=f1.read() for line in data.split(): count += 1 print("The word count is", count) filename=input("Enter Filename:") wordcount(filename)
+num_words =0
+with open('text.txt','r') as file1:
+    for i in file1:
+        word =i.split()
+        num_words += len(word)
+print("Number of words={}".format(num_words))
 ### OUTPUT:
 ![githublogo](note1.jpg)
 ![githublogo](note2.jpg)
